@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: votaplay-tiktok-live
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TIKTOK_USERNAME
+        value: songsmk_
